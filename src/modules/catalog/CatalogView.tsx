@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { LoadingSpinner } from "../../components";
+import { LoadingSpinner } from "../../tools/ui_components";
 
 import useCatalog from "./useCatalog";
 import StyledCatalogView from "./StyledCatalogView";

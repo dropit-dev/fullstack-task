@@ -48,4 +48,4 @@ const StyledSpinner = styled.div`
   }
 `;
 
-export { LoadingSpinner };
+export default LoadingSpinner;
