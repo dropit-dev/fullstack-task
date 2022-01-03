@@ -4,24 +4,25 @@ import { API } from "../../contexts/api";
 import useFlag from "../../tools/hooks/useFlag";
 
 import { Product } from "../product/types";
+import useCatalogTable from "./useCatalogTable";
 
 const useCatalog = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<string[]>([]);
   const [isLoading, onStartLoading, onEndLoading] = useFlag(true);
 
   const handleAddProductToCart = useCallback((product: Product) => {
     // TODO
+    console.log("handleAddProductToCart");
+    console.log("product", product);
   }, []);
+
+  const { columns, getKeyRow } = useCatalogTable({
+    onAddItem: handleAddProductToCart,
+  });
 
   useEffect(
     () => {
-      API.product
-        .getAll()
-        .then(setProducts)
-        .then(API.category.getAll)
-        .then(setCategories)
-        .finally(onEndLoading);
+      API.product.getAll().then(setProducts).finally(onEndLoading);
     },
     [] // eslint-disable-line
   );
@@ -29,8 +30,8 @@ const useCatalog = () => {
   return {
     isLoading,
     products,
-    categories,
-    onAddProductToCart: handleAddProductToCart,
+    columns,
+    getKeyRow,
   };
 };
 

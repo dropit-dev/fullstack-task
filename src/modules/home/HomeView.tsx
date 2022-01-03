@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import routesApp from "../../contexts/navigation/routesApp";
 
 import StyledHomeView from "./StyledHomeView";
 
-const HomeView: FC = () => {
+const HomeView = () => {
   return (
     <StyledHomeView>
       <div className="HomeView__header">

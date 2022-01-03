@@ -1,3 +1,4 @@
 import LoadingSpinner from "./LoadingSpinner";
+import Table from "./Table";
 
-export { LoadingSpinner };
+export { LoadingSpinner, Table };

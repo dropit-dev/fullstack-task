@@ -15,8 +15,7 @@ const StyledCatalogView = styled.div`
   }
 
   .CatalogView__grid {
-    height: 720px;
-    width: 100%;
+    margin: 24px;
 
     .CatalogView__grid_productImage {
       width: 60px;
