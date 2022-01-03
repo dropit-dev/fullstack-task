@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+#### Welcome to Dropit's React Test
 
-## Available Scripts
+### Guidlines
 
-In the project directory, you can run:
+* use existing components and configuration if exists
+* try to mimic the implemented architecture when adding content
+* keep code clean and organized
 
-### `yarn start`
+## Requirements
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* #### setup an application state (consistent for a single session)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* #### Catalog page
+    * add search input that filter the displayed data by product's name (search is done by the BE)
+    * get products categories by sending a request to the BE
+    * add selector to filter the displayed data by a selected category (filter is done by the BE)
+    * add sort functionality (sort is done by the BE)
+    * handle add product to cart
+    * display the cart icon with a badge counter for the number of products (not items) in the cart
 
-### `yarn test`
+* #### Product page
+    * setup new page and module (use existing configuration)
+    * get product extended data by id (send request to BE)
+    * display product extended data
+    * display the cart icon with a badge counter for the number of products (not items) in the cart
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* #### Product page
+    * setup new page and module (use existing configuration)
+    * display products that are in the cart state
+    * post checkout request with the quantity of each product that are in the cart
+    * display successful message when done
