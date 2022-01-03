@@ -27,6 +27,7 @@
 * #### Cart page
     * setup new page and module (use existing configuration)
     * display products that are in the cart state as a table (image, name, price per unit, quantity, total price)
-    * show summary data under the table (number of products, number of items, total price)
+    * show summary data (number of products, number of items, total price)
+    * add a checkout button near the summary
     * post checkout request with the quantity of each product that are in the cart
     * display successful message when done
