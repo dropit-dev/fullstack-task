@@ -3,7 +3,6 @@ import styled from "styled-components";
 const StyledCatalogView = styled.div`
   .CatalogView__header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     margin-inline: 8px;
@@ -13,17 +12,6 @@ const StyledCatalogView = styled.div`
       font-size: 24px;
       font-weight: bold;
     }
-
-    .CatalogView__header_icon {
-      padding: 8px;
-    }
-  }
-
-  .CatalogView__filter {
-    width: 200px;
-
-    margin: 8px;
-    padding: 8px;
   }
 
   .CatalogView__grid {
@@ -41,4 +29,4 @@ const StyledCatalogView = styled.div`
   }
 `;
 
-export { StyledCatalogView };
+export default StyledCatalogView;

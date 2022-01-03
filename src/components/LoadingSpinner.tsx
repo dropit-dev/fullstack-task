@@ -1,6 +1,23 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { CircularProgress } from "@material-ui/core";
+
+import { CircularProgress } from "@mui/material";
+
+interface Props {
+  isVisible: boolean;
+}
+
+const LoadingSpinner: FC<Props> = ({ isVisible }) => {
+  return isVisible ? (
+    <StyledSpinner>
+      <div className="Spinner__overlay" />
+
+      <CircularProgress className="Spinner__main" />
+    </StyledSpinner>
+  ) : (
+    <div />
+  );
+};
 
 const StyledSpinner = styled.div`
   position: fixed;
@@ -30,20 +47,5 @@ const StyledSpinner = styled.div`
     color: #000000;
   }
 `;
-
-interface Props {
-  isVisible: boolean;
-}
-
-const LoadingSpinner: FC<Props> = ({ isVisible }) => {
-  return isVisible ? (
-    <StyledSpinner>
-      <div className="Spinner__overlay" />
-      <CircularProgress className="Spinner__main" />
-    </StyledSpinner>
-  ) : (
-    <div />
-  );
-};
 
 export { LoadingSpinner };

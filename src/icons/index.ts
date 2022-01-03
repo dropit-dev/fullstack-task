@@ -1,3 +1,3 @@
-export { CartIcon } from "./Cart";
-export { AddToCartIcon } from "./AddToCart";
-export { BackIcon } from "./Back";
+export { CartIcon } from "./IconCart";
+export { AddToCartIcon } from "./IconAddToCart";
+export { BackIcon } from "./IconBack";

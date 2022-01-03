@@ -34,4 +34,4 @@ const StyledHomeView = styled.div`
   }
 `;
 
-export { StyledHomeView };
+export default StyledHomeView;

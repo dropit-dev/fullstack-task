@@ -1,7 +1,9 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import { StyledHomeView } from "./styles";
+import routesApp from "../../navigation/routesApp";
+
+import StyledHomeView from "./StyledHomeView";
 
 const HomeView: FC = () => {
   return (
@@ -11,7 +13,7 @@ const HomeView: FC = () => {
           Welcome To Dropit (by Itay Golbary)
         </div>
 
-        <Link to="/catalog">Continue to Catalog</Link>
+        <Link to={routesApp.getCatalog()}>Continue to Catalog</Link>
       </div>
 
       <div className="HomeView__content">

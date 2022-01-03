@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 
 interface Props {
   d: string;
 }
 
-const Icon: FC<Props> = ({ d }) => {
+const IconComponent = ({ d }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const Icon: FC<Props> = ({ d }) => {
   );
 };
 
-export { Icon };
+export default IconComponent;
