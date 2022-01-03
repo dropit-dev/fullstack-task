@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
-import { AppRouter } from "./contexts/navigation/AppRouter";
+import AppRouter from "./contexts/navigation/AppRouter";
 
 const App = () => {
   return (
