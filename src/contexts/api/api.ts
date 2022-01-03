@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-import { Product } from "../modules/product/types";
+import { Product } from "../../modules/product/types";
 
 const AxiosClient = Axios.create({
   baseURL: "https://fakestoreapi.com",

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { API } from "../../api";
+import { API } from "../../contexts/api";
 import useFlag from "../../tools/hooks/useFlag";
 
 import { Product } from "../product/types";

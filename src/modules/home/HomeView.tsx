@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-import routesApp from "../../navigation/routesApp";
+import routesApp from "../../contexts/navigation/routesApp";
 
 import StyledHomeView from "./StyledHomeView";
 

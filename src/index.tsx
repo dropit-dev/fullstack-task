@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
 
-import { AppRouter } from "./navigation/AppRouter";
+import { AppRouter } from "./contexts/navigation/AppRouter";
 
-const App: FC = () => {
+const App = () => {
   return (
     <div>
       <AppRouter />
