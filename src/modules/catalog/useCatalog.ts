@@ -4,6 +4,7 @@ import { API } from "../../contexts/api";
 import useFlag from "../../tools/hooks/useFlag";
 
 import { CatalogProduct } from "../product/types";
+
 import useCatalogTable from "./useCatalogTable";
 
 const useCatalog = () => {
