@@ -5,7 +5,9 @@
 * use existing libraries and configuration if exists
 * try to mimic the implemented architecture when adding content
 * keep code clean and organized
+* use mocks as guidelines to design
 * **either use the given BE implementation to add basic functionally with Kotlin, or implement the same functionality and structure with a language/framework of your choosing**
+* submit the task to [amira@dropitshopping.com](mailto:amira@dropitshopping.com)
 
 ## Requirements
 
@@ -21,31 +23,30 @@
       * handle add product to cart
       * handle click row (navigate to product page or open product modal)
       * display the cart icon with a badge counter for the number of products (not items) in the cart
-      * display "No Results" for an empty 
-      * ![Table](images/table_categories.png)
-
+      * display "No Results" for an empty
+      
   * #### Product page/modal
       * set up new page/modal and module (use existing configuration)
       * get product extended data by id (send request to BE)
       * display all product extended data
       * display the cart icon with a badge counter for the number of products (not items) in the cart
-      * ![Product](images/product.png)
-
+      * add and handle back/close button
+      
   * #### Cart page
       * set up new page and module (use existing configuration)
       * display products that are in the cart state as a table (image, name, price per unit, quantity, total price)
       * show summary data (number of products, number of items, total price)
-      * add a checkout button near the summary
+      * add input for user's name
+      * add a checkout button (disabled when cart or user's name is empty)
       * post checkout request with the quantity of each product that are in the cart
       * display a successful message when done
-      * ![Cart](images/cart.png)
-
+      * add and handle back/close button
+      
 * ### Server (http://localhost:8080/)
 
   * #### Catalog api & controller
     * modify **getProducts** to accept params and implement filter functionalities (search by name, filter by category and sort by any property)
-    * create **getProduct** endpoint that returns a new ProductDetailsDTO will all available product data
+    * create **getProduct** endpoint that returns a new ProductDetailsDTO (with all available product data)
 
   * #### Orders api & controller
-    * modify **checkout** to accept params and implement filter functionality (search by name, filter by category and sort by a property)
-    * create **getProduct** endpoint that returns a new ProductDetailsDTO will all available product data
+    * modify **checkout** to accept user's name and validate name and list are not empty (respond with 400 if validation failed)
