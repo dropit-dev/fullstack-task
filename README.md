@@ -1,35 +1,61 @@
-#### Welcome to Dropit's React Test
+![Dropit](front/src/tools/assets/logo-dropit-business.svg)
+
+#### Welcome to Dropit's Fullstack Test
+
+### Disclaimers
+* the stacks for this task are similar to the ones we're using here at Dropit (Kotlin for the BE, React with Typescript for the FE) 
+* the architecture as well (simple implementation)  
+* for the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
+* for the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing
+
 
 ### Guidelines
 
-* use existing components and configuration if exists
+* open the `back` and `front` projects separately in your IDE (so it can understand each project's context)
+* use existing implementation (e.g.: libraries, configuration)
 * try to mimic the implemented architecture when adding content
 * keep code clean and organized
+* submit the task via mail or a private repo
 
 ## Requirements
 
-* setup an application state (consistent for a single session)
+* ### Client (http://localhost:3000/)
 
-* #### Catalog page
-    * get products categories by sending a request to the BE
-    * add search input that filter the displayed data by product's name (search is done by the BE)
-    * add selector to filter the displayed data by a selected category (filter is done by the BE)
-    * add sort functionality (sort is done by the BE)
-    * handle add product to cart
-    * display the cart icon with a badge counter for the number of products (not items) in the cart
-    *  ![Table](images/table_categories.png)
-* #### Product page
-    * setup new page and module (use existing configuration)
-    * get product extended data by id (send request to BE)
-    * display product extended data
-    * display the cart icon with a badge counter for the number of products (not items) in the cart
-    *  ![Product](images/product.png)
+  * set up an application state (consistent for a single session)
 
-* #### Cart page
-    * setup new page and module (use existing configuration)
-    * display products that are in the cart state as a table (image, name, price per unit, quantity, total price)
-    * show summary data (number of products, number of items, total price)
-    * add a checkout button near the summary
-    * post checkout request with the quantity of each product that are in the cart
-    * display successful message when done
-    * ![Cart](images/cart.png)
+  * #### Catalog page
+      * get products categories by sending a request to the BE
+      * add search input that filter the displayed data by product's name (search is done by the BE)
+      * add selector to filter the displayed data by a selected category (filter is done by the BE)
+      * add sort functionality by any property (sort is done by the BE)
+      * handle add product to cart
+      * handle click row (navigate to product page or open product modal)
+      * display the cart icon with a badge counter for the number of products (not items) in the cart
+      * display "No Results" for an empty table
+      
+  * #### Product page/modal
+      * set up new page/modal and module (use existing configuration)
+      * get product extended data by id (send request to BE)
+      * display all product extended data
+      * display the cart icon with a badge counter for the number of products (not items) in the cart
+      * add and handle back/close button
+      
+  * #### Cart page
+      * set up new page and module (use existing configuration)
+      * display products that are in the cart state as a table (image, name, price per unit, quantity, total price)
+      * show summary data (number of products, number of items, total price)
+      * add input for user's name
+      * add a checkout button (disabled when cart or user's name is empty)
+      * post checkout request with the quantity of each product that are in the cart
+      * display a successful message when done
+      * add and handle back/close button
+      
+* ### Server (http://localhost:8080/)
+
+  * #### Catalog api & controller
+    * create **getCategories** endpoint that returns all products categories (can add functionalities to increase efficiency)
+    * modify **getProducts** to accept params and implement filter functionalities (search by name, filter by category and sort by any property)
+    * create **getProduct** endpoint that returns a new ProductDetailsDTO (with all available product data)
+
+  * #### Orders api & controller
+    * modify **checkout** to accept user's name and validate name and list are not empty (respond with 400 if validation failed)

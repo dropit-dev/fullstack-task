@@ -3,14 +3,15 @@ import { useCallback, useEffect, useState } from "react";
 import { API } from "../../contexts/api";
 import useFlag from "../../tools/hooks/useFlag";
 
-import { Product } from "../product/types";
+import { CatalogProduct } from "../product/types";
+
 import useCatalogTable from "./useCatalogTable";
 
 const useCatalog = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<CatalogProduct[]>([]);
   const [isLoading, onStartLoading, onEndLoading] = useFlag(true);
 
-  const handleAddProductToCart = useCallback((product: Product) => {
+  const handleAddProductToCart = useCallback((product: CatalogProduct) => {
     // TODO
     console.log("handleAddProductToCart");
     console.log("product", product);
