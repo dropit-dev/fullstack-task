@@ -3,26 +3,26 @@
 #### Welcome to Dropit's Fullstack Test
 
 ### Disclaimers
-* the stacks for this task are similar to the ones we're using here at Dropit (Kotlin for the BE, React with Typescript for the FE) 
-* the architecture as well (simple implementation)  
-* some features for this task are optional
-* for the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
-* for the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing (from scratch - **Products DB at "./back/src/main/resources/static/products.json"**)
+* The stacks for this task are similar to the ones we're using here at Dropit (Kotlin for the BE, React with Typescript for the FE) 
+* The architecture as well (simple implementation)  
+* Some features for this task are optional
+* For the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
+* For the BE, you can add and modify the given implementation or implement the same functionalities with a language/framework of your choosing from scratch using the products [here](/back/src/main/resources/static/products.json)
 
 
 ### Guidelines
 
-* open the `back` and `front` projects separately in your IDE (so it can understand each project's context)
-* use existing implementation (e.g.: libraries, configuration)
-* try to mimic the implemented architecture when adding content
-* keep code clean and organized
-* submit the task via mail or a private repo
+* Open the [back](/back) and [front](/front) projects separately in your IDE (so it can understand each project's context)
+* Use existing implementation (e.g.: libraries, configuration)
+* Try to mimic the implemented architecture when adding content
+* Keep code clean and organized
+* Submit the task via mail or a private repo
 
 ## Requirements
 
 * ### Client (http://localhost:3000/)
 
-  * set up an application state (consistent for a single session)
+  * Set up an application state (consistent for a single session)
 
   * #### Catalog page
       * get products' categories by sending a request to the BE and render the categories within the filter (see next line)
