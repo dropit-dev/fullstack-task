@@ -29,16 +29,6 @@ const HomeView = () => {
             GitHub repo and instructions
           </a>
         </div>
-
-        <div className="HomeView__content_email">
-          <>
-            {"Submit to: "}
-
-            <a href="mailto:amira@dropitshopping.com">
-              amira@dropitshopping.com
-            </a>
-          </>
-        </div>
       </div>
     </StyledHomeView>
   );
