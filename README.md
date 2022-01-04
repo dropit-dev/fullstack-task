@@ -22,12 +22,14 @@
       * handle click row (navigate to product page or open product modal)
       * display the cart icon with a badge counter for the number of products (not items) in the cart
       * display "No Results" for an empty 
+      * ![Table](images/table_categories.png)
 
   * #### Product page/modal
       * set up new page/modal and module (use existing configuration)
       * get product extended data by id (send request to BE)
       * display all product extended data
       * display the cart icon with a badge counter for the number of products (not items) in the cart
+      * ![Product](images/product.png)
 
   * #### Cart page
       * set up new page and module (use existing configuration)
@@ -36,6 +38,7 @@
       * add a checkout button near the summary
       * post checkout request with the quantity of each product that are in the cart
       * display a successful message when done
+      * ![Cart](images/cart.png)
 
 * ### Server (http://localhost:8080/)
 
