@@ -15,7 +15,7 @@
 * use existing implementation (e.g.: libraries, configuration)
 * try to mimic the implemented architecture when adding content
 * keep code clean and organized
-* submit the task to [amira@dropitshopping.com](mailto:amira@dropitshopping.com)
+* submit the task via mail or a private repo
 
 ## Requirements
 
