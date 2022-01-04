@@ -23,7 +23,7 @@
       * handle add product to cart
       * handle click row (navigate to product page or open product modal)
       * display the cart icon with a badge counter for the number of products (not items) in the cart
-      * display "No Results" for an empty
+      * display "No Results" for an empty table
       
   * #### Product page/modal
       * set up new page/modal and module (use existing configuration)
