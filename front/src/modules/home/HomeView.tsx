@@ -1,34 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import routesApp from "../../contexts/navigation/routesApp";
+import DropitLogo from "../../tools/assets/logo-dropit-buisness.svg";
 
 import StyledHomeView from "./StyledHomeView";
 
 const HomeView = () => {
-  return (
-    <StyledHomeView>
-      <div className="HomeView__header">
-        <div className="HomeView__header_title">
-          Welcome To Dropit (by Itay Golbary)
-        </div>
+	return (
+		<StyledHomeView>
+			<div className="HomeView__header">
+				<img src={DropitLogo} alt="logo" />
 
-        <Link to={routesApp.getCatalog()}>Continue to Catalog</Link>
-      </div>
+				<div className="HomeView__header_title">
+					{"Welcome To Dropit's Fullstack test project"}
+				</div>
 
-      <div className="HomeView__content">
-        <div className="HomeView__content_github">
-          <a href="https://github.com/itay-golbary/dropit-test">GitHub Repo</a>
-        </div>
+				<Link to={routesApp.getCatalog()}>Continue to Catalog</Link>
+			</div>
 
-        <div className="HomeView__content_email">
-          <a href="mailto:itay@golbary.io">Email: itay@golbary.io</a>
-        </div>
+			<div className="HomeView__content">
+				<div className="HomeView__content_github">
+					<a href="https://github.com/dropit-dev/fullstack-task" target="_blank" rel="noreferrer">GitHub repo and
+						instructions</a>
+				</div>
 
-        <div className="HomeView__content_phone">Phone: 052-4655995</div>
-      </div>
-    </StyledHomeView>
-  );
+				<div className="HomeView__content_email">
+					<>
+						{"Submit to: "}
+
+						<a href="mailto:amira@dropitshopping.com">amira@dropitshopping.com</a>
+					</>
+				</div>
+			</div>
+		</StyledHomeView>
+	);
 };
 
 export default HomeView;
