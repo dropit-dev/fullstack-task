@@ -17,12 +17,13 @@
     * add sort functionality (sort is done by the BE)
     * handle add product to cart
     * display the cart icon with a badge counter for the number of products (not items) in the cart
-
+    *  ![Table](images/table_categories.png)
 * #### Product page
     * setup new page and module (use existing configuration)
     * get product extended data by id (send request to BE)
     * display product extended data
     * display the cart icon with a badge counter for the number of products (not items) in the cart
+    *  ![Product](images/product.png)
 
 * #### Cart page
     * setup new page and module (use existing configuration)
@@ -31,3 +32,4 @@
     * add a checkout button near the summary
     * post checkout request with the quantity of each product that are in the cart
     * display successful message when done
+    * ![Cart](images/cart.png)

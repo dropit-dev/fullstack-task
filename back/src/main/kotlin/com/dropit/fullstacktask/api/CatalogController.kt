@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice
 
 @RestControllerAdvice
 @RequestMapping("/catalog")
-class ProductsController(val catalogRepository: CatalogRepository): ProductsApi {
+class CatalogController(val catalogRepository: CatalogRepository): CatalogApi {
 
     override fun getProducts(): List<Product> {
-        println("products")
-
         return catalogRepository.getProducts()
     }
 
