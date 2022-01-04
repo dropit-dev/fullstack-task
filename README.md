@@ -1,3 +1,5 @@
+![Dropit](front/src/tools/assets/logo-dropit-business.svg)
+
 #### Welcome to Dropit's Fullstack Test
 
 ### Disclaimers

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import routesApp from "../../contexts/navigation/routesApp";
-import DropitLogo from "../../tools/assets/logo-dropit-buisness.svg";
+import DropitLogo from "../../tools/assets/logo-dropit-business.svg";
 
 import StyledHomeView from "./StyledHomeView";
 
