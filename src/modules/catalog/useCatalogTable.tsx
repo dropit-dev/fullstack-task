@@ -4,14 +4,14 @@ import React, { useCallback, useMemo } from "react";
 import { GetKeyRow, TableColumn } from "../../tools/ui_components/Table/types";
 import { AddToCartIcon } from "../../tools/icons";
 
-import { Product } from "../product/types";
+import { CatalogProduct } from "../product/types";
 
 interface Props {
-  onAddItem: (item: Product) => void;
+  onAddItem: (item: CatalogProduct) => void;
 }
 
 function useCatalogTable({ onAddItem }: Props) {
-  const columns: TableColumn<Product>[] = useMemo(
+  const columns: TableColumn<CatalogProduct>[] = useMemo(
     () => [
       {
         key: "id",
@@ -54,7 +54,7 @@ function useCatalogTable({ onAddItem }: Props) {
     [onAddItem]
   );
 
-  const getKeyRow: GetKeyRow<Product> = useCallback(
+  const getKeyRow: GetKeyRow<CatalogProduct> = useCallback(
     (item) => item.id.toString(),
     []
   );
