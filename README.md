@@ -7,7 +7,7 @@
 * the architecture as well (simple implementation)  
 * some features for this task are optional
 * for the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
-* for the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing
+* for the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing (from scratch - **Products DB at "./back/src/main/resources/static/products.json"**)
 
 
 ### Guidelines
