@@ -24,9 +24,9 @@
   * set up an application state (consistent for a single session)
 
   * #### Catalog page
-      * get products categories by sending a request to the BE
-      * add search input that filter the displayed data by product's name (search is done by the BE)
+      * get products' categories by sending a request to the BE and render the categories within the filter (see next line)
       * add selector to filter the displayed data by a selected category (filter is done by the BE)
+      * add search input that filter the displayed data by product's name (search is done by the BE)
       * add sort functionality by any property (sort is done by the BE)
       * handle add product to cart
       * handle click row (navigate to product page or open product modal)
