@@ -2,10 +2,10 @@
 
 ### Guidelines
 
+* open the `back` and `front` projects separately in your IDE (so it can understand each project's context)
 * use existing libraries and configuration if exists
 * try to mimic the implemented architecture when adding content
 * keep code clean and organized
-* use mocks as guidelines to design
 * **either use the given BE implementation to add basic functionally with Kotlin, or implement the same functionality and structure with a language/framework of your choosing**
 * submit the task to [amira@dropitshopping.com](mailto:amira@dropitshopping.com)
 
@@ -45,6 +45,7 @@
 * ### Server (http://localhost:8080/)
 
   * #### Catalog api & controller
+    * create **getCategories** endpoint that returns all products categories (can add functionalities to increase efficiency)
     * modify **getProducts** to accept params and implement filter functionalities (search by name, filter by category and sort by any property)
     * create **getProduct** endpoint that returns a new ProductDetailsDTO (with all available product data)
 
