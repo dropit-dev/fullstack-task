@@ -1,12 +1,18 @@
 #### Welcome to Dropit's Fullstack Test
 
+### Disclaimers
+* the stacks for this task are similar to the ones we're using here at Dropit (Kotlin for the BE, React with Typescript for the FE) 
+* the architecture as well (simple implementation)  
+* for the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
+* for the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing
+
+
 ### Guidelines
 
 * open the `back` and `front` projects separately in your IDE (so it can understand each project's context)
-* use existing libraries and configuration if exists
+* use existing implementation (e.g.: libraries, configuration)
 * try to mimic the implemented architecture when adding content
 * keep code clean and organized
-* **either use the given BE implementation to add basic functionally with Kotlin, or implement the same functionality and structure with a language/framework of your choosing**
 * submit the task to [amira@dropitshopping.com](mailto:amira@dropitshopping.com)
 
 ## Requirements
