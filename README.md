@@ -7,8 +7,7 @@
 * The architecture as well (simple implementation)  
 * Some features for this task are optional
 * For the FE, you can add and modify the given architecture, or implement a different architecture of your choosing
-* For the BE, you can add and modify the given implementation or implement the same functionalities with a language/framework of your choosing from scratch using the products [here](/back/src/main/resources/static/products.json)
-
+* For the BE, you can add and modify the given implementation, or implement the same functionalities with a language/framework of your choosing from scratch (using the products [here](/back/src/main/resources/static/products.json))
 
 ### Guidelines
 
@@ -30,7 +29,7 @@
       * add search input that filter the displayed data by product's name (search is done by the BE)
       * **optional:** add sort functionality by any property (sort is done by the BE)
       * handle add product to cart
-      * handle click row (navigate to product page or open product modal)
+      * **optional:** handle click row (navigate to product page or open product modal)
       * display the cart icon with a badge counter for the number of products (not items) in the cart
       * display "No Results" for an empty table
       
