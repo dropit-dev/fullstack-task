@@ -30,14 +30,14 @@
       * **optional:** add sort functionality by any property (sort is done by the BE)
       * handle add product to cart
       * **optional:** handle click row (navigate to product page or open product modal)
-      * display the cart icon with a badge counter for the number of products (not items) in the cart
+      * display the cart icon with a badge counter for the number of items (not products) in the cart
       * display "No Results" for an empty table
       
   * #### Product page/modal (Optional)
       * set up new page/modal and module (use existing configuration)
       * get product extended data by id (send request to BE)
       * display all product extended data
-      * display the cart icon with a badge counter for the number of products (not items) in the cart
+      * display the cart icon with a badge counter for the number of items (not products) in the cart
       * add and handle back/close button
       
   * #### Cart page
